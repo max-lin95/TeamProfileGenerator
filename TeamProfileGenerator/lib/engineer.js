@@ -2,14 +2,14 @@ const { createPromptModule } = require("inquirer");
 const employee = require("./employee")
 
 class engineer extends employee {
-    constructor(name, id, email, officeNumber) {
+    constructor(name, id, email, github) {
         super(name, id, email);
-        this.officeNumber = officeNumber;
+        this.github = github;
         this.title = "engineer";
     }
 
-    getOfficeNumber() {
-        return this.officeNumber
+    getGithub() {
+        return this.github;
     }
 }
 
