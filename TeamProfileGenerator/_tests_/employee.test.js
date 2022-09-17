@@ -32,7 +32,7 @@ test("Get the name", () => {
 test("Get the Id", () => {
     const testId = "100";
     const employee = new employee("Max", testId);
-    expect(employee.getId()).toBe(testId);
+    expect(employee.getID()).toBe(testId);
 });
 
 test("Get the email", () => {
@@ -44,5 +44,5 @@ test("Get the email", () => {
 test("getRole", () => {
     const testRole = "employee"
     const employee = new employee("Max", 1, "max@test.com");
-    expect(employee.getrole()).toBe(testRole);
+    expect(employee.getRole()).toBe(testRole);
 });
